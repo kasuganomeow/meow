@@ -7,7 +7,7 @@ The speed at which I update this project depends on how well I slept last night 
 Currently, only C and ASM are accepted; languages ​​such as Rust and C++ are not being considered.
 
 # Note
-Due to a mistake I made with Git, all previous commit records were lost. However, I had backed up the older codebase (without commit records) to the project's legacy folder.
+Due to a mistake I made with Git, all previous commit records were lost.
 
 # Build
 Meow is compiled using CMake and Clang (CMake 3.30+, Clang 17+).
