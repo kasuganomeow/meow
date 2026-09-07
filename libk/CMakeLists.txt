@@ -16,7 +16,7 @@
 #  License along with the Meow. If not, see
 #  <https://www.gnu.org/licenses/>.
 #
-#  This file path: kernel/src/main.c
+#  This file path: libk/CMakeLists.txt
 #
 target_sources(meow PRIVATE
     "src/string/memcpy.c"
