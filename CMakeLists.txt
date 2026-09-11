@@ -39,6 +39,7 @@ set(INTERNAL_COMPILE_FLAGS
     -fno-PIC
     -ffunction-sections
     -fdata-sections
+    -ffile-prefix-map=${CMAKE_SOURCE_DIR}/=
 )
 
 if(ARCH STREQUAL "x86_64")
@@ -113,6 +114,10 @@ set(LINK_FLAGS
 )
 
 add_executable(meow)
+
+target_include_directories(meow PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+)
 
 target_compile_options(meow PRIVATE ${COMPILE_FLAGS})
 target_link_options(meow PRIVATE ${LINK_FLAGS})

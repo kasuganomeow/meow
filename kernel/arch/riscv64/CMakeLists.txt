@@ -19,10 +19,14 @@
 #  This file path: kernel/arch/riscv64/CMakeLists.txt
 #
 target_sources(meow PRIVATE
-    "src/limine.S"
-    "src/stopcpu.S"
+    "cpu/cpu.c"
+    "int/trap.c"
+    "int/trap.S"
+    "mmu/mmu.c"
+    "mmu/paging.c"
+    "smp/smp.c"
 )
 
 target_include_directories(meow PRIVATE
-    ${CMAKE_CURRENT_SOURCE_DIR}/include
+    ${CMAKE_CURRENT_SOURCE_DIR}
 )

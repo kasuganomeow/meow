@@ -43,16 +43,14 @@ The following are the goals of Project Meow.
 ## Short-term goals
 - [x] Limine compatibility
 - [x] Physical Memory Manager
-- [ ] Enable memory paging (identical mapping)
-- [x] The basic `stopcpu()` and `panic()` functions
-- [ ] IDT and Interrupt Handling
-- [ ] Memory repaging and mapping the kernel to the high half of memory
-- [ ] Physical Memory Manager
-- [ ] Virtual Memory Manager
-- [ ] Memory Allocator
+- [x] Enable memory paging
+- [x] IDT and Interrupt Handling
+- [x] Physical Memory Manager
+- [x] Virtual Memory Manager
+- [x] Memory Allocator
 
 ## Long-term goals
-- [ ] SMP support
+- [x] SMP support
 - [ ] Keyboard interrupt (APIC) and PS/2 driver
 - [ ] Virtual File System
 - [ ] PATA and SATA drivers

@@ -19,10 +19,8 @@
 #  This file path: libk/CMakeLists.txt
 #
 target_sources(meow PRIVATE
-    "src/string/memcpy.c"
-    "src/string/strlen.c"
-)
-
-target_include_directories(meow PRIVATE
-    ${CMAKE_CURRENT_SOURCE_DIR}/include
+    "string/memcpy.c"
+    "string/memmove.c"
+    "string/memset.c"
+    "string/strlen.c"
 )

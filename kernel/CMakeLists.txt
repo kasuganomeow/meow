@@ -16,17 +16,28 @@
 #  License along with the Meow. If not, see
 #  <https://www.gnu.org/licenses/>.
 #
-#  This file path: kernel/CMakeLists.txt
+#  This file path: kernel/source/CMakeLists.txt
 #
 target_sources(meow PRIVATE
-    "src/memory/physical.c"
-    "src/main.c"
-    "src/memory.c"
-    "src/panic.c"
+    "main.c"
+    "panic.c"
+    "start.c"
+    "con/con.c"
+    "con/font.c"
+    "con/font.S"
+    "con/kprint.c"
+    "mem/kalloc.c"
+    "mem/mem.c"
+    "mem/physical.c"
+    "mem/virtual.c"
+    "mem/xalloc.c"
+    "mmu/mapping.c"
+    "mmu/mmu.c"
+    "mmu/paging.c"
 )
 
 target_include_directories(meow PRIVATE
-    ${CMAKE_CURRENT_SOURCE_DIR}/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/con
 )
 
 add_subdirectory(arch/${ARCH})
